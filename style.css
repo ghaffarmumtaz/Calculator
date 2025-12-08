@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow: none;
+}
+
+.calcBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.caculateBox{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    justify-content: space-around;
+    margin: 0 10%;
+    border: 2px solid black;
+    width: 20%;
+    height: 30%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+div{
+    font-size: 20px;
+    font-weight: 530;
+}
+
+.multi{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.minus{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.plus{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.equal{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 786px){
+    .calcBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 13px;
+}
+
+.totaEcueation{
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.caculateBox{
+    margin: 0 5%;
+    border: 2px solid black;
+    width: 90%;
+    height: 70%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+div{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+i{
+    font-weight: 1000;
+}
+
+
+}
