@@ -3,9 +3,16 @@ let colorToggle = document.querySelector('.colorToggle');
 colorToggle.addEventListener('click', function(){
   let colorIcon = document.querySelector('#colorIcon')
   colorIcon.innerHTML = `<p> <i class="fa-regular fa-sun"></i> </p>`
-  let body = document.querySelector('body');
+  let body = document.querySelector('.calcBox');
 
   body.classList.toggle('active');
+
+  let a = document.querySelectorAll('a');
+
+  a.forEach(function(a){
+   a.classList.toggle('aactive')
+  })
+  
   
 })
 
