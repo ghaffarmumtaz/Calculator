@@ -6,14 +6,19 @@
 }
 body{
     overflow: none;
+        width: 100vw;
+    height: 100vh;
 }
 
 .calcBox{
-    width: 100vw;
-    height: 100vh;
+    width: 20%;
+    height: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    border: 1px solid black;
 }
 
 ul{
@@ -21,11 +26,13 @@ ul{
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    width: 50%;
+    gap: 20px;
 }
 
 ul li {
     list-style: none;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .caculateBox{
@@ -34,11 +41,21 @@ ul li {
     grid-template-rows: repeat(5, auto);
     justify-content: space-around;
     margin: 0 10%;
-    border: 2px solid black;
-    width: 20%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     padding: 10px;
     margin: 0 auto;
+}
+
+.totalEcueation{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 50%;
+}
+
+.perfom, .excu{
+    text-align: end;
 }
 
 div{
@@ -89,24 +106,25 @@ ul li {
     font-size: 13px;
 }
 
-.totaEcueation{
-    display: flex;
-    justify-content: end;
-    padding-right: 40px;
+.totalEcueation{
+     width: 70%;
+}
+
+.perfom, .excu{
+    text-align: end;
 }
 
 .caculateBox{
     margin: 0 5%;
-    border: 2px solid black;
     width: 90%;
-    height: 70%;
+    height: 45%;
     padding: 5px;
     margin: 0 auto;
 }
 
 div{
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 i{
@@ -114,4 +132,12 @@ i{
 }
 
 
+}
+
+
+
+
+.active {
+    background-color: black;
+    color: white;
 }
